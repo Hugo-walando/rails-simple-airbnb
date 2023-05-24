@@ -1,0 +1,25 @@
+<div class="container">
+
+<h1>All our Flats</h1>
+
+<div class="cardos">
+<% @flats.each do |flat|%>
+<div class="cardo">
+<div class="card-content">
+<h3><%= flat.name %></h3>
+<p><%= flat.description %></p>
+<%= flat.address %>
+<%= flat.number_of_guests %>
+<p><%= flat.price_per_night %>€</p>
+</div>
+<div class="card-info">
+<%= link_to "More info", flat,class: "text-decoration-none" %>
+<%# <%= link_to "Remove" flat_path(@flat),data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},class: "text-decoration-none" %>
+</div>
+
+</div>
+<% end %>
+
+</div>
+
+</div>

@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+ .cardo{
+  margin: 5px;
+  width: 350px;
+  box-shadow: 0 0 1px 1px lightgray;
+ }
+
+ .cardos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+.card-content{
+  background-color: rgb(244, 244, 244);
+  padding: 10px;
+}
+.card-info{
+  padding: 10px;
+  border-top: 1px solid rgba(160,160,160,0.2)
+}
+.formo{
+  margin: 0 auto;
+  background-color: rgba(240, 240, 240, 0.512);
+  width: 500px;
+  padding: 15px;
+}
